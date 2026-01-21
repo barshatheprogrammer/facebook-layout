@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+/* TOP BAR */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  height: 60px;
+}
+
+/* Left */
+.header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.header input {
+  width: 220px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Center Icons */
+.header .center {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header .center span {
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.header .center span:hover {
+  color:royalblue;
+  transform: scale(1.15);
+}
+
+/* Right */
+.header .right span {
+  font-size: 26px;
+  color: #333;
+  cursor: pointer;
+}
+/* LAYOUT */
+.container {
+  display: flex;
+  padding: 15px;
+}
+
+/* LEFT */
+.left {
+  width: 22%;
+}
+
+.left .item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left .item:hover {
+  background: #e4e6eb;
+  border-radius: 8px;
+}
+
+/* FEED */
+.feed {
+  width: 56%;
+  padding: 0 20px;
+}
+
+.stories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.story {
+  width: 110px;
+  height: 160px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.story.add {
+  justify-content: center;
+  align-items: center;
+}
+
+.add-post {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-post input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #f0f2f5;
+}
+
+.add-post button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  
+}
+.Inpost button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.Inpost button:hover {
+  background: #2a7be5; /* darker FB blue */
+}
+
+/* POST */
+.post {
+  background: white;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.post-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.post-header img {
+  border-radius: 50%;
+}
+
+.post-header p {
+  font-size: 12px;
+  color: gray;
+}
+
+.post-text {
+  margin: 10px 0;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RIGHT */
+.right {
+  width: 22%;
+}
+
+.contact {
+  padding: 8px;
+}

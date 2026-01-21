@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  />
+  <link rel="icon" href="image.png">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="div1 header">
+    <div class="left">
+   <img src="image.png" alt="Logo" />
+  <div class="search-box">
+  <span class="material-symbols-outlined">search</span>
+  <input type="text" placeholder="Search Facebook" />
+</div>
+
+    </div>
+
+    <nav class="center">
+      <span class="material-symbols-outlined">home</span>
+      <span class="material-symbols-outlined">tv</span>
+      <span class="material-symbols-outlined">groups</span>
+      <span class="material-symbols-outlined">notifications</span>
+      <span class="material-symbols-outlined">chat</span>
+    </nav>
+
+    <div class="right">
+      <span class="material-symbols-outlined">settings</span>
+    </div>
+  </header>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="left">
+    <div class="item">👤 Barsha Mahajan</div>
+    <div class="item">👥 Friends</div>
+    <div class="item">📅 Events</div>
+    <div class="item">💾 Saved</div>
+    <div class="item">🎮 Gaming</div>
+    <div class="item">🕒 Memories</div>
+    <div class="item">⚙ Settings & Privacy</div>
+  </aside>
+
+  <!-- FEED -->
+  <main class="feed">
+
+    <!-- STORIES -->
+    <div class="stories">
+      <div class="story add">+ Add Story</div>
+      <div class="story"></div>
+      <div class="story"></div>
+      <div class="story"></div>
+      <div class="story"></div>
+    </div>
+
+    <!-- ADD POST -->
+   <div class="add-post">
+  <input id="postInput" placeholder="What's on your mind, Josephine?">
+  <div class="Inpost">
+    <button onclick="addPost()">Post</button>
+  </div>
+</div>
+
+
+    <!-- POSTS -->
+    <div id="posts">
+      <div class="post">
+        <div class="post-header">
+          <img src="">
+          <div>
+            <b>Tom Russo</b>
+            <p>5 mins · 🌍</p>
+          </div>
+        </div>
+
+        <p class="post-text">Not having fun at all 😅</p>
+
+        <img class="post-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+        <div class="post-actions">
+          <button onclick="like(this)"> Like</button>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="right">
+    <h4>Contacts</h4>
+    <div class="contact">🟢 Dennis Han</div>
+    <div class="contact">🟢 Eric Jones</div>
+    <div class="contact">🟢 Cynthia Lopez</div>
+    <div class="contact">🟢 Betty Chen</div>
+    <div class="contact">🟢 Dan Brown</div>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
